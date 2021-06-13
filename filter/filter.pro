@@ -1,4 +1,4 @@
-update=Sun 13 Jun 2021 04:17:49 PM BST
+update=Sun 13 Jun 2021 04:39:29 PM BST
 version=1
 last_client=kicad
 [general]
@@ -25,7 +25,7 @@ ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=uSDX.net
+LastNetListRead=filter.net
 CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0
