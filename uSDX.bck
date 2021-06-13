@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP Filter
+D Low Pass Filter, DC to 0.3 MHz, 50 Ohm, Mini-Circuits HZ1198
+K low pass filter
+F https://www.minicircuits.com/pdfs/LPF-B0R3+.pdf
+$ENDCMP
+#
+#End Doc Library

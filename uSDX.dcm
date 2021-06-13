@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP Filter
+D Band filters for uSDX
+K low pass filter; impedance matching
+$ENDCMP
+#
+#End Doc Library
