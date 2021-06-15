@@ -1,0 +1,115 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Simulation_SPICE:VSIN V1
+U 1 1 617884FC
+P 2850 3600
+F 0 "V1" H 2980 3691 50  0000 L CNN
+F 1 "VSIN" H 2980 3600 50  0000 L CNN
+F 2 "" H 2850 3600 50  0001 C CNN
+F 3 "~" H 2850 3600 50  0001 C CNN
+F 4 "Y" H 2850 3600 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 2850 3600 50  0001 L CNN "Spice_Primitive"
+F 6 "sin(0 50m 7Meg)" H 2980 3509 50  0000 L CNN "Spice_Model"
+	1    2850 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 61788D7F
+P 2850 3950
+F 0 "#PWR01" H 2850 3700 50  0001 C CNN
+F 1 "GND" H 2855 3777 50  0000 C CNN
+F 2 "" H 2850 3950 50  0001 C CNN
+F 3 "" H 2850 3950 50  0001 C CNN
+	1    2850 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 3950 2850 3800
+$Comp
+L Device:C C2
+U 1 1 617893B8
+P 4050 3850
+F 0 "C2" H 4165 3896 50  0000 L CNN
+F 1 "100n" H 4165 3805 50  0000 L CNN
+F 2 "" H 4088 3700 50  0001 C CNN
+F 3 "~" H 4050 3850 50  0001 C CNN
+	1    4050 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 3700 4050 3650
+$Comp
+L power:GND #PWR02
+U 1 1 61789A47
+P 4050 4100
+F 0 "#PWR02" H 4050 3850 50  0001 C CNN
+F 1 "GND" H 4055 3927 50  0000 C CNN
+F 2 "" H 4050 4100 50  0001 C CNN
+F 3 "" H 4050 4100 50  0001 C CNN
+	1    4050 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 4100 4050 4050
+$Comp
+L Device:R R1
+U 1 1 6178A079
+P 3650 3850
+F 0 "R1" H 3720 3896 50  0000 L CNN
+F 1 "470k" H 3720 3805 50  0000 L CNN
+F 2 "" V 3580 3850 50  0001 C CNN
+F 3 "~" H 3650 3850 50  0001 C CNN
+	1    3650 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 3700 3650 3650
+Wire Wire Line
+	3650 3650 4050 3650
+Connection ~ 4050 3650
+Wire Wire Line
+	4050 3650 4050 3600
+Wire Wire Line
+	3650 4000 3650 4050
+Wire Wire Line
+	3650 4050 4050 4050
+Connection ~ 4050 4050
+Wire Wire Line
+	4050 4050 4050 4000
+Wire Wire Line
+	4050 3150 4050 3300
+Wire Wire Line
+	2850 3150 2850 3400
+$Comp
+L Simulation_SPICE:DIODE D1
+U 1 1 6179302F
+P 4050 3450
+F 0 "D1" V 4004 3530 50  0000 L CNN
+F 1 "DIODE" V 4095 3530 50  0000 L CNN
+F 2 "" H 4050 3450 50  0001 C CNN
+F 3 "~" H 4050 3450 50  0001 C CNN
+F 4 "Y" H 4050 3450 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "D" H 4050 3450 50  0001 L CNN "Spice_Primitive"
+F 6 "BAT54" H 4050 3450 50  0001 C CNN "Spice_Model"
+F 7 "diode.lib" H 4050 3450 50  0001 C CNN "Spice_Lib_File"
+	1    4050 3450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2850 3150 4050 3150
+$EndSCHEMATC

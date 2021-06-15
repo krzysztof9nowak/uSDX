@@ -1,8 +1,17 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP ATGM336H-5N
+F https://datasheet.lcsc.com/lcsc/1810261521_ZHONGKEWEI-ATGM336H-5N31_C90770.pdf
+$ENDCMP
+#
 $CMP Filter
 D Band filters for uSDX
 K low pass filter; impedance matching
+$ENDCMP
+#
+$CMP SSD1306
+D SSD1306 OLED
+K SSD1306
 $ENDCMP
 #
 #End Doc Library
