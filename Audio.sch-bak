@@ -14,19 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector:AudioJack2_Ground_Switch J?
-U 1 1 610F5452
-P 3000 3850
-AR Path="/610F5452" Ref="J?"  Part="1" 
-AR Path="/610D2463/610F5452" Ref="J5"  Part="1" 
-F 0 "J5" H 3032 4275 50  0000 C CNN
-F 1 "Mic" H 3032 4184 50  0000 C CNN
-F 2 "Connector_Audio:Jack_3.5mm_Ledino_KB3SPRS_Horizontal" H 3000 4050 50  0001 C CNN
-F 3 "~" H 3000 4050 50  0001 C CNN
-	1    3000 3850
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:Microphone_Condenser MK?
 U 1 1 610F5458
 P 3650 4000
@@ -39,36 +26,23 @@ F 3 "~" V 3650 4100 50  0001 C CNN
 	1    3650 4000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3000 4150 3000 4250
-Wire Wire Line
-	3000 4250 3350 4250
 $Comp
 L power:GND #PWR?
 U 1 1 610F5460
-P 3350 4350
+P 3650 4350
 AR Path="/610F5460" Ref="#PWR?"  Part="1" 
 AR Path="/610D2463/610F5460" Ref="#PWR052"  Part="1" 
-F 0 "#PWR052" H 3350 4100 50  0001 C CNN
-F 1 "GND" H 3355 4177 50  0000 C CNN
-F 2 "" H 3350 4350 50  0001 C CNN
-F 3 "" H 3350 4350 50  0001 C CNN
-	1    3350 4350
+F 0 "#PWR052" H 3650 4100 50  0001 C CNN
+F 1 "GND" H 3655 4177 50  0000 C CNN
+F 2 "" H 3650 4350 50  0001 C CNN
+F 3 "" H 3650 4350 50  0001 C CNN
+	1    3650 4350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3350 4350 3350 4250
-Connection ~ 3350 4250
-Wire Wire Line
-	3350 4250 3650 4250
-Wire Wire Line
 	3200 3750 3650 3750
 Wire Wire Line
-	3650 4250 3650 4200
-Wire Wire Line
 	3650 3800 3650 3750
-Wire Wire Line
-	3250 3850 3200 3850
 $Comp
 L Device:C C?
 U 1 1 610F546F
@@ -142,7 +116,7 @@ $EndComp
 Wire Wire Line
 	4450 3650 4150 3650
 Connection ~ 4150 3650
-Text HLabel 3250 3850 2    50   Input ~ 0
+Text HLabel 3400 3450 2    50   Input ~ 0
 DIT
 Text HLabel 4000 3550 1    50   Input ~ 0
 DAH
@@ -203,33 +177,18 @@ AREF
 Wire Wire Line
 	4900 3250 4900 3150
 $Comp
-L Connector:AudioJack2_Ground_Switch J?
-U 1 1 611AF988
-P 3000 5600
-AR Path="/611AF988" Ref="J?"  Part="1" 
-AR Path="/610D2463/611AF988" Ref="J6"  Part="1" 
-F 0 "J6" H 3032 6025 50  0000 C CNN
-F 1 "Headphones" H 3032 5934 50  0000 C CNN
-F 2 "Connector_Audio:Jack_3.5mm_Ledino_KB3SPRS_Horizontal" H 3000 5800 50  0001 C CNN
-F 3 "~" H 3000 5800 50  0001 C CNN
-	1    3000 5600
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 611B1022
-P 3000 5950
+P 3400 5700
 AR Path="/611B1022" Ref="#PWR?"  Part="1" 
 AR Path="/610D2463/611B1022" Ref="#PWR050"  Part="1" 
-F 0 "#PWR050" H 3000 5700 50  0001 C CNN
-F 1 "GND" H 3005 5777 50  0000 C CNN
-F 2 "" H 3000 5950 50  0001 C CNN
-F 3 "" H 3000 5950 50  0001 C CNN
-	1    3000 5950
+F 0 "#PWR050" H 3400 5450 50  0001 C CNN
+F 1 "GND" H 3405 5527 50  0000 C CNN
+F 2 "" H 3400 5700 50  0001 C CNN
+F 3 "" H 3400 5700 50  0001 C CNN
+	1    3400 5700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3000 5950 3000 5900
 $Comp
 L Device:Speaker LS1
 U 1 1 611B3BEF
@@ -631,4 +590,51 @@ Connection ~ 3550 5400
 Wire Wire Line
 	3550 5400 3550 5550
 Connection ~ 3450 5400
+$Comp
+L Connector:AudioJack3_SwitchTR J6
+U 1 1 610D9A0C
+P 3000 5400
+F 0 "J6" H 2982 5725 50  0000 C CNN
+F 1 "Headphones" H 2982 5634 50  0000 C CNN
+F 2 "Connector_Audio:Jack_3.5mm_Ledino_KB3SPRS_Horizontal" H 3000 5400 50  0001 C CNN
+F 3 "~" H 3000 5400 50  0001 C CNN
+	1    3000 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:AudioJack3_SwitchTR J5
+U 1 1 610E05E3
+P 3000 3450
+F 0 "J5" H 2982 3775 50  0000 C CNN
+F 1 "Mic" H 2982 3684 50  0000 C CNN
+F 2 "Connector_Audio:Jack_3.5mm_Ledino_KB3SPRS_Horizontal" H 3000 3450 50  0001 C CNN
+F 3 "~" H 3000 3450 50  0001 C CNN
+	1    3000 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 4200 3650 4350
+$Comp
+L power:GND #PWR?
+U 1 1 610F6CB6
+P 3300 3850
+AR Path="/610F6CB6" Ref="#PWR?"  Part="1" 
+AR Path="/610D2463/610F6CB6" Ref="#PWR079"  Part="1" 
+F 0 "#PWR079" H 3300 3600 50  0001 C CNN
+F 1 "GND" H 3305 3677 50  0000 C CNN
+F 2 "" H 3300 3850 50  0001 C CNN
+F 3 "" H 3300 3850 50  0001 C CNN
+	1    3300 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 3450 3400 3450
+Wire Wire Line
+	3200 3350 3300 3350
+Wire Wire Line
+	3300 3350 3300 3850
+Wire Wire Line
+	3400 5700 3400 5300
+Wire Wire Line
+	3400 5300 3200 5300
 $EndSCHEMATC
