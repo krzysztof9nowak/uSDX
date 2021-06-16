@@ -525,8 +525,6 @@ F 3 "~" H 4200 1550 50  0001 C CNN
 	1    4200 1550
 	1    0    0    -1  
 $EndComp
-Text GLabel 4500 1350 2    50   Input ~ 0
-PPS
 Text GLabel 4500 1550 2    50   Input ~ 0
 RX
 Text GLabel 4500 1450 2    50   Input ~ 0
@@ -937,16 +935,8 @@ Text GLabel 6650 4150 2    50   Input ~ 0
 ADC7
 Wire Wire Line
 	6650 4150 6550 4150
-Text GLabel 9900 3600 2    50   Input ~ 0
-PD0
-Text GLabel 9900 3700 2    50   Input ~ 0
-PD1
 Text GLabel 9900 4000 2    50   Input ~ 0
 PD4
-Text GLabel 1700 2500 2    50   Input ~ 0
-PD0
-Text GLabel 1700 2600 2    50   Input ~ 0
-PD1
 Text GLabel 1700 2700 2    50   Input ~ 0
 PD4
 Wire Wire Line
@@ -961,7 +951,6 @@ Wire Wire Line
 	9900 3700 9800 3700
 Wire Wire Line
 	9800 4000 9900 4000
-NoConn ~ 8600 3600
 NoConn ~ 8600 3700
 Text GLabel 9900 2200 2    50   Input ~ 0
 PB3
@@ -1006,34 +995,6 @@ Wire Wire Line
 	10350 3400 10300 3400
 Connection ~ 10300 3400
 $Comp
-L Device:C C12
-U 1 1 60E67CD4
-P 10300 4300
-F 0 "C12" H 10185 4254 50  0000 R CNN
-F 1 "100n" H 10185 4345 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 10338 4150 50  0001 C CNN
-F 3 "~" H 10300 4300 50  0001 C CNN
-	1    10300 4300
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	10300 4150 10300 4000
-Connection ~ 10300 4000
-$Comp
-L power:GND #PWR018
-U 1 1 60E704DF
-P 10300 4500
-F 0 "#PWR018" H 10300 4250 50  0001 C CNN
-F 1 "GND" H 10305 4327 50  0000 C CNN
-F 2 "" H 10300 4500 50  0001 C CNN
-F 3 "" H 10300 4500 50  0001 C CNN
-	1    10300 4500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10300 4500 10300 4450
-NoConn ~ 9800 4100
-$Comp
 L Device:Crystal_GND24 Y1
 U 1 1 610588A8
 P 10650 2850
@@ -1059,4 +1020,22 @@ F 3 "" H 10650 2250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10650 2250 10650 2650
+Text GLabel 9900 3600 2    50   Input ~ 0
+RX
+Text GLabel 9900 3700 2    50   Input ~ 0
+TX
+Text GLabel 4500 1350 2    50   Input ~ 0
+PD2
+Text GLabel 9900 4100 2    50   Input ~ 0
+PD5
+Wire Wire Line
+	9900 4100 9800 4100
+Text GLabel 1700 2600 2    50   Input ~ 0
+PD5
+Text GLabel 8450 3600 0    50   Input ~ 0
+PE0
+Wire Wire Line
+	8450 3600 8600 3600
+Text GLabel 1700 2500 2    50   Input ~ 0
+PE0
 $EndSCHEMATC
