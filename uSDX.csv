@@ -1,0 +1,23 @@
+Ref,Qnty,Value,Cmp name,Footprint,Description,Vendor,MPN
+"C2, C5, C7, C10, C22, C39, C42, ",7,10u,CP,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,Polarized capacitor,,CL21A106KOQNNNE
+"C16, C17, C19, C20, C23, C36, ",6,10n,C,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,Unpolarized capacitor,,885382207006
+"C26, C27, C28, C29, ",4,470n,C_Small,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,"Unpolarized capacitor, small symbol",,CL21B474KOFNNNE
+"C35, ",1,47n,C,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,Unpolarized capacitor,,885012207084
+"D2, ",1,BZT52B5V6,BZT52Bxx,Diode_SMD:D_SOD-123,"500mW Zener Diode, SOD-123",,BZT52B5V6-TP
+"D3, D4, ",2,BAT54W,BAT54W,Package_TO_SOT_SMD:SOT-323_SC-70,"Schottky barrier diode, SOT-323",,"BAT54W,115"
+"F1, ",1,1A,Fuse,Fuse:Fuse_0603_1608Metric_Pad1.05x0.95mm_HandSolder,Fuse,,0ZCK0050FF2E
+"J1, ",1,Jack-DC,Jack-DC,Connector_BarrelJack:BarrelJack_Wuerth_6941xx301002,DC Barrel Jack,,694108301002
+"J5, ",1,Mic,AudioJack3_SwitchTR,Connector_Audio:Jack_3.5mm_Ledino_KB3SPRS_Horizontal,"Audio Jack, 3 Poles (Stereo / TRS), Switched TR Poles (Normalling)",,SJ1-3515
+"J6, ",1,Headphones,AudioJack3_SwitchTR,Connector_Audio:Jack_3.5mm_Ledino_KB3SPRS_Horizontal,"Audio Jack, 3 Poles (Stereo / TRS), Switched TR Poles (Normalling)",,SJ1-3515
+"L1, L2, L3, L5, ",4,100uH,L,Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder,Inductor,,LQM21DN101M70L
+"MK1, ",1,Mic,Microphone_Condenser,uSDX:Electret_9.7mm,Condenser microphone,,CMA-4544PF-W
+"R23, ",1,0,R,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,Resistor,,CRCW08050000Z0EAC
+"U1, ",1,L7805,L7805,Package_TO_SOT_SMD:TO-252-2,"Positive 1.5A 35V Linear Regulator, Fixed Output 5V, TO-220/TO-263/TO-252",,L7805CDT-TR
+"U2, ",1,LD1117S33TR_SOT223,LD1117S33TR_SOT223,Package_TO_SOT_SMD:SOT-223-3_TabPin2,"800mA Fixed Low Drop Positive Voltage Regulator, Fixed Output 3.3V, SOT-223",,LD1117S33TR
+"U3, ",1,ATmega328PB-AU,ATmega328PB-AU,Package_QFP:TQFP-32_7x7mm_P0.8mm,"20MHz, 32kB Flash, 2kB SRAM, 1kB EEPROM, TQFP-32",,ATMEGA328PB-AU
+"U4, ",1,LM4562,LM4562,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,"Dual High-Performance, High-Fidelity Audio Operational Amplifier, DIP-8/SOIC-8/TO-99-8",,LM4562MA/NOPB
+"U5, ",1,74AHCT1G00,74AHCT1G00,Package_TO_SOT_SMD:SOT-23-5_HandSoldering,"Single NAND Gate, Low-Voltage CMOS",,74AHCT1G00DBVRG4
+"U6, ",1,SN74CBT3253,SN74CBT3253,Package_SO:SOIC-16_3.9x9.9mm_P1.27mm,Dual 1 to 4 Analog Multiplexer,,SN74CBT3253DRE4
+"U8, ",1,LM386,LM386,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,"Low Voltage Audio Power Amplifier, DIP-8/SOIC-8/SSOP-8",,LM386M-1/NOPB
+"X1, ",1,FT3HNBPK27.0-T1,ASE-xxxMHz,Oscillator:Oscillator_SMD_Abracon_ASE-4Pin_3.2x2.5mm,"3.3V CMOS SMD Crystal Clock Oscillator, Abracon",,ECS-TXO-3225-270-TR 
+"Y1, ",1,20MHz,Crystal_GND24,Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm,"Four pin crystal, GND on pins 2 and 4",,ABM8AIG-20.000MHZ-2Z-T

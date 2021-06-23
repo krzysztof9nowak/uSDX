@@ -98,8 +98,6 @@ Wire Wire Line
 Connection ~ 3650 3650
 Wire Wire Line
 	3650 3650 4000 3650
-Wire Wire Line
-	3650 3300 3650 3200
 $Comp
 L Device:C C?
 U 1 1 610F5491
@@ -477,17 +475,6 @@ Wire Wire Line
 Wire Wire Line
 	4050 5900 4050 5800
 $Comp
-L power:+5VA #PWR053
-U 1 1 61550A8E
-P 3650 3200
-F 0 "#PWR053" H 3650 3050 50  0001 C CNN
-F 1 "+5VA" H 3665 3373 50  0000 C CNN
-F 2 "" H 3650 3200 50  0001 C CNN
-F 3 "" H 3650 3200 50  0001 C CNN
-	1    3650 3200
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C?
 U 1 1 60E94996
 P 4800 6700
@@ -637,4 +624,69 @@ Wire Wire Line
 	3400 5700 3400 5300
 Wire Wire Line
 	3400 5300 3200 5300
+$Comp
+L Device:L L?
+U 1 1 60EE260F
+P 4200 2500
+AR Path="/60EE260F" Ref="L?"  Part="1" 
+AR Path="/610D2463/60EE260F" Ref="L?"  Part="1" 
+F 0 "L?" V 4390 2500 50  0000 C CNN
+F 1 "100uH" V 4299 2500 50  0000 C CNN
+F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4200 2500 50  0001 C CNN
+F 3 "~" H 4200 2500 50  0001 C CNN
+	1    4200 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 60EE4AA8
+P 4500 2350
+F 0 "#PWR?" H 4500 2200 50  0001 C CNN
+F 1 "VCC" H 4515 2523 50  0000 C CNN
+F 2 "" H 4500 2350 50  0001 C CNN
+F 3 "" H 4500 2350 50  0001 C CNN
+	1    4500 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60EF36F1
+P 3900 2800
+AR Path="/60EF36F1" Ref="C?"  Part="1" 
+AR Path="/610D2463/60EF36F1" Ref="C?"  Part="1" 
+F 0 "C?" H 3785 2754 50  0000 R CNN
+F 1 "100n" H 3785 2845 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 3938 2650 50  0001 C CNN
+F 3 "~" H 3900 2800 50  0001 C CNN
+	1    3900 2800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 2500 3900 2500
+Wire Wire Line
+	3650 2500 3650 3300
+Wire Wire Line
+	3900 2650 3900 2500
+Connection ~ 3900 2500
+Wire Wire Line
+	3900 2500 3650 2500
+Wire Wire Line
+	4350 2500 4500 2500
+Wire Wire Line
+	4500 2500 4500 2350
+$Comp
+L power:GND #PWR?
+U 1 1 60F00371
+P 3900 3000
+AR Path="/60F00371" Ref="#PWR?"  Part="1" 
+AR Path="/610D2463/60F00371" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3900 2750 50  0001 C CNN
+F 1 "GND" H 3905 2827 50  0000 C CNN
+F 2 "" H 3900 3000 50  0001 C CNN
+F 3 "" H 3900 3000 50  0001 C CNN
+	1    3900 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 3000 3900 2950
 $EndSCHEMATC
